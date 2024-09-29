@@ -7,7 +7,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Register />} />
-        <Route path="/view" element={<View />} />
+        <Route path={import.meta.env.VITE_ACCESS_ROUTE} element={<View />} />
       </Routes>
     </Router>
   );
